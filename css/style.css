@@ -1,0 +1,36 @@
+* {
+	padding: 0;
+	margin: 0;
+	-webkit-backface-visibility:hidden; /*отключает отрисовку задней стороны div*/
+    box-sizing:border-box; /* развмер DIV включает в себя padding и border */
+}
+body{
+	background-color: gray;
+}
+.tap{
+    opacity: 0.5;
+}
+div.buttonsPanel {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+	width: 710px;
+	height: 50px;
+	background-color: lightgrey;
+}
+.button {
+	border: 2px navy;
+	border-style: outset;
+	border-radius: 5px;
+	padding: 10px;
+	cursor: pointer;
+}
+.inactive {
+	pointer-events: none;
+	opacity: 0.3;
+}
+
+.mayTry {
+	background-color: forestgreen;
+}
